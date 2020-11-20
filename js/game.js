@@ -102,7 +102,7 @@ class Game{
                  
                   if (player.index !== null) {
                       for(var a = 0;a<fruitGroup.maxDepth();a++){
-                     if(fruitGroup.get(a)!= null && player.isTouching(fruitGroup.get(a))){
+                     if(fruitGroup.get(a)!= null && fruitGroup.get(a).isTouching(players[player.index-1]){
                          fruitGroup.get(a).destroy()
                      }
                     }
